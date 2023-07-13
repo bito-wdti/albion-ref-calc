@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Albion Refine Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Albion Refine Calculator</h1>
+    </header>
+
+    <main>
+        <div id="selectors">
+            Refine Material
+            <select size="5" id="material">
+                <option selected>Plank</option>
+                <option>Metal Bar</option>
+                <option>Cloth</option>
+                <option>Stone Block</option>
+                <option>Leather</option>
+            </select>
+
+            City
+            <select size="6" id="city">
+                <option selected>Caerleon</option>
+                <option>Lymhurst</option>
+                <option>Fort Sterling</option>
+                <option>Thetford</option>
+                <option>Bridgewatch</option>
+                <option>Martlock</option>
+            </select>
+        </div>
+
+        <div id="user-inputs">
+            <label for="tier">Tier</label>
+            <select value="tier" id="tier" onchange="tier3Selected()">
+                <option>3</option>
+                <option selected>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+            </select>
+
+            <p>Enchantment</p>
+            <input type="radio" id="dot0" name="enchantment" value=".0">
+            <label for="dot0">Raw</label>
+            <input type="radio" id="dot1" name="enchantment" value=".1">
+            <label for="dot1">.1</label>
+            <input type="radio" id="dot2" name="enchantment" value=".2">
+            <label for="dot2">.2</label>
+            <input type="radio" id="dot3" name="enchantment" value=".3">
+            <label for="dot3">.3</label>
+            <input type="radio" id="dot4" name="enchantment" value=".4">
+            <label for="dot4">.4</label>
+
+            <p>Return Rate:</p>
+            <input type="number" id="return-rate">
+
+            <p>Usage Fee:</p>
+            <input type="number" id="usage-fee">
+
+            <br>
+            <input type="checkbox" id="premium"/>
+            <label for="premium">Premium Account</label>
+
+            <br>
+            <input type="submit" value="Calcular" onclick="getUserInputs()">
+
+            <p id="error-msg"></p>
+        </div>
+
+        <div id="prices">
+            <h3>Prices</h3>
+
+            <p>Required Items</p>
+            <img id='img-item1'>
+            <input type="number" id="input-item1" onchange="getProfit()">
+            <br>
+            <img id="img-item2">
+            <input type="number" id="input-item2" onchange="getProfit()">
+
+            <p>Final Product</p>
+            <img id="img-item3">
+            <input type="number" id="input-item3" onchange="getProfit()">
+        </div>
+
+        <div id="profits">
+            <h3>Profit Table <i>(per unit)</i></h3>
+            <ul>
+                <li>Resources Cost: <strong id="resources-cost"></strong></li>
+                <li>Market Fees: <strong id="market-fees"></strong></li>
+                <li>Usage Fee: <strong id="strong-usage-fee"></strong></li>
+                <li>Earnings: <strong id="earnings"></strong></li>
+                <li>Total Profit: <strong id="total-profit"></strong></li>
+            </ul>
+        </div>
+    </main>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

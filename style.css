@@ -1,0 +1,41 @@
+main {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    line-height: 60%;
+}
+
+div#selectors {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: aliceblue;
+}
+
+div#user-inputs {
+
+    background-color: bisque;
+    padding: 15px;
+}
+
+div#prices {
+
+    background-color: antiquewhite;
+    display: none;
+}
+
+div#profits {
+    line-height: normal;
+}
+
+img {
+    width: 70px;
+}
+
+strong {
+    color: rgb(165, 17, 17);
+}
