@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
     <title>Albion Refine Calculator</title>
 </head>
 <body>
     <header>
+        <h1 id="ultimate-logo"><img src="images/logo-icon.png"/>ULTIMATE</h1>
         <h1>Albion Refine Calculator</h1>
     </header>
 
     <main>
         <div id="selectors">
-            Refine Material
-            <select size="5" id="material">
-                <option selected>Plank</option>
-                <option>Metal Bar</option>
-                <option>Cloth</option>
-                <option>Stone Block</option>
-                <option>Leather</option>
-            </select>
+            <div>
+                <p>Which material do you want to refine?</p>
+                <select size="5" id="material">
+                    <option selected>Plank</option>
+                    <option>Metal Bar</option>
+                    <option>Cloth</option>
+                    <option>Stone Block</option>
+                    <option>Leather</option>
+                </select>
+            </div>
 
-            City
-            <select size="6" id="city">
-                <option selected>Caerleon</option>
-                <option>Lymhurst</option>
-                <option>Fort Sterling</option>
-                <option>Thetford</option>
-                <option>Bridgewatch</option>
-                <option>Martlock</option>
-            </select>
+            <div>
+                <p>City: </p>
+                <select id="city">
+                    <option selected>Caerleon</option>
+                    <option>Lymhurst</option>
+                    <option>Fort Sterling</option>
+                    <option>Thetford</option>
+                    <option>Bridgewatch</option>
+                    <option>Martlock</option>
+                </select>
+            </div>
         </div>
 
         <div id="user-inputs">

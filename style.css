@@ -1,10 +1,69 @@
+body {
+
+    margin: 0px;
+    background-image: linear-gradient(to top left,#444054, #2F243A 50%);
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Nunito', sans-serif;
+    color: black;  
+}
+
 main {
 
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
     line-height: 60%;
+}
+
+header {
+    
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header > #ultimate-logo {
+
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    background-color: #DB8A74;  
+    color: #2F243A;
+
+    border-radius: 10px;
+    padding: 5px 10px 5px 0px;
+    margin-right: 10px;
+
+    box-shadow: 3px 3px 5px black;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header > #ultimate-logo:hover {
+
+    cursor: pointer;
+    background-color: #BEBBBB;
+    transform: translateY(-0.25em);
+    box-shadow: 3px 3px 5px black;
+}
+
+header > #ultimate-logo > img {
+
+    width: 1.5em;
+    margin-left: 0;
+}
+
+header > h1 {
+
+    color: white;
+    font-size: 1.25rem;
 }
 
 div#selectors {
@@ -13,7 +72,19 @@ div#selectors {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    background-color: aliceblue;
+
+    background-color: #FAC9B8;
+    margin: 10px;
+    padding: 15px;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+div#selectors > div > p {
+
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
 }
 
 div#user-inputs {
