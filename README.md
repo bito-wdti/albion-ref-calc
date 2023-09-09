@@ -24,3 +24,6 @@ Essa é a interface do site atualmente, com um exemplo de uso.
 
 Nesse caso vemos que para a produção do item 'Tecido' de nível/tier '6' e encantamento '2', o lucro pra cada unidade é de 2506 pratas (moeda do jogo).
 
+## 🖐 Como utilizar
+
+Você pode baixar o projeto como um arquivo ZIP, descompactar e depois abrir o arquivo ./index.html com o seu navegador.
